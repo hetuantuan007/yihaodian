@@ -700,6 +700,143 @@
 		</a>
 	</div>
 </div>
+<div class="sention_six">
+	<div class="_left">
+		<h4>
+			<a href="#">国产食品 ></a>
+		</h4>
+		<p>国产食品</p>
+		<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<a class="l1" href="#">
+				      <p class="g1">一号坚果</p>
+				      <p>199减100</p>
+				      <img src="img/yh01.jpg"/>
+				    </a>
+	            </div>
+	           	<div class="swiper-slide">
+	            	<a class="l1" href="#">
+				      <p class="g1">一号坚果</p>
+				      <p>199减100</p>
+				      <img src="img/yihao02.jpg"/>
+				    </a>
+	            </div>
+	            <div class="swiper-slide">
+	            	<a class="l1" href="#">
+				      <p class="g1">一号坚果</p>
+				      <p>199减100</p>
+				      <img src="img/yh03.jpg"/>
+				    </a>
+	            </div>
+	    </div>
+
+	    <!-- Add Pagination -->
+	    <div class="swiper-pagination"></div>
+
+	    <!-- Add Arrows -->
+	  <!--   <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div> -->
+  		</div>
+  		<div class="bt">
+  			<p></p>
+  			<a href="">
+  				
+  			</a>
+  		</div>
+	</div>
+	<div class="_cen">
+		<div class="c1">
+			<ul>
+				<li><a href="#">粮油调味</a>|</li>
+				<li><a href="#">休闲零食</a>|</li>
+				<li><a href="#">米面</a>|</li>
+				<li><a href="#">南北干货</a>|</li>
+				<li><a href="#">方便速食</a>|</li>
+				<li><a href="#">饼干糕点</a>|</li>
+				<li><a href="#">肉干肉脯</a></li>
+			</ul>
+		</div>
+		<div  class="c2">
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh04.jpg"/>
+				</a>
+			</div>
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh05.jpg"/>
+				</a>
+			</div>
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh06.jpg"/>
+				</a>
+			</div>
+		</div>
+		<div  class="c2">
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh07.jpg"/>
+				</a>
+			</div>
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh08.png"/>
+				</a>
+			</div>
+			<div class="c21">
+				<a href="#">
+					<p>美味1起享</p>
+					<p class="c22">第二件半价</p>
+					<img src="img/yh05.jpg"/>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="_right">
+		<p>热门商品</p>
+		<div class="r1">
+			<ul>
+				<li><a href="#">
+					<img src="img/rm1.jpg"/>
+					<p>农夫山泉 饮用天然水5L*4桶 整箱</p>
+					<p class="r11">￥31.90</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/rm2.jpg"/>
+					<p>农夫山泉 饮用天然水5L*4桶 整箱</p>
+					<p class="r11">￥31.90</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/rm3.jpg"/>
+					<p>农夫山泉 饮用天然水5L*4桶 整箱</p>
+					<p class="r11">￥31.90</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/rm4.jpg"/>
+					<p>农夫山泉 饮用天然水5L*4桶 整箱</p>
+					<p class="r11">￥31.90</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/rm5.jpg"/>
+					<p>农夫山泉 饮用天然水5L*4桶 整箱</p>
+					<p class="r11">￥31.90</p>
+				</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -709,7 +846,7 @@
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -725,6 +862,21 @@
       navigation: {
         nextEl: '.senction_one .swiper-button-next',
         prevEl: '.senction_one .swiper-button-prev',
+      },
+    });
+     var swiper = new Swiper('.sention_six .swiper-container', {
+      effect: 'flip',
+      grabCursor: true,
+       autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.sention_six .swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.sention_six .swiper-button-next',
+        prevEl: '.sention_six .swiper-button-prev',
       },
     });
   </script>
