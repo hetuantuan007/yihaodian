@@ -21,7 +21,7 @@ gulp.task("copycss",function(){
 });
 // 复制图片文件
 gulp.task("images",function(){
-	gulp.src("img/*.jpg")
+	gulp.src("img/*.*")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yihaodian\\img"));
 });
 
@@ -52,7 +52,7 @@ gulp.task("watchall",function(){
 	gulp.watch("index.html",["copyfile"]);
 	gulp.watch("js/*.js",["copyjs"]);
 	gulp.watch("css/*.css",["copycss"]);
-	gulp.watch("img/*.jpg",["images"]);
+	gulp.watch("img/*.*",["images"]);
 	gulp.watch("css/*.scss",["sassfile"]);
 	gulp.watch("js/index.js",["concatanduglifyandrenamejs"]);
 });//当文件发生变化时执行这个命令
