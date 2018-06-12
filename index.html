@@ -5,6 +5,7 @@
 <title>一号店</title>
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <!-- header -->
@@ -13,21 +14,53 @@
 		<a href="#"><img src="img/weizhi.jpg"/><span>送货地址：西安</span></a>
 	</div>
 	<div class="top_right ">
-		<span>Hi,请</span>
+		<!-- <span>Hi,请</span>
 		<a href="#">登陆</a>
 		<a href="#">注册</a>
-		<a href="#">我的订单</a>
+		<a href="#"><i class="iconfont icon-icon-"></i>我的订单</a>
 		<a href="#">客户服务</a>
-		<a href="#">APP下载</a>
+		<a id="t1" href="#"><i class="iconfont icon-shouji"></i>APP下载</a> -->
+		<ul>
+			<li>
+				<div class="top_right_1">
+					<span>Hi,请</span>
+					<a href="#">登陆&nbsp;&nbsp;</a>
+					<a class="tr1" href="#">注册</a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="#"><i class="iconfont icon-icon-"></i>我的订单</a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="#">客户服务</a>
+				</div>
+			</li>
+			<li id="t1">
+				<div>
+					<a href="#"><i class="iconfont icon-shouji"></i>APP下载</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="erweima">
+		<p>扫描二维码<br/>下载1号店APP</p>
+		<a href="#"><img src="img/erwema01.png"/></a>
 	</div>
 </div>
 <!-- search -->
+<div class="search_1">
 <div class="search">
 	<div class="search_logo"><img src="img/logo.jpg"/></div>
 	<div class="search_left">
 		<input class="txt" type="text"/>
+		<button>
+			<i class="iconfont icon-fangdajing"></i>
+		</button>
 		<div class="search_right">
-			<a href="#">购物车</a>
+			<a href="#"><i class="iconfont icon-cart"></i> &nbsp;&nbsp;购物车</a>
 		</div>
 		<!-- <button type="button"/> -->
 		<div class="search_bottom">
@@ -55,6 +88,7 @@
 		<a href="#">电器城</a>
 	</div>
 </div>
+</div>
 <!-- banner -->
 <div class="banner">
 	<div class="swiper-container">
@@ -77,42 +111,24 @@
 	 <div class="box">
 	<div class="nav_left">
 		<ul>
-			<li data-id="1"> <span>美妆/个人护理</span></li>
-			<li data-id="2"> <span>手机 /数码 /电脑办公</span></li>
-			<li data-id="3"> <span>零食 /茶酒 /进口食品 </span></li>
-			<li data-id="4"> <span>母婴玩具 </span></li>
-			<li data-id="5"> <span>腕表 /眼镜 /珠宝饰品 </span></li>
-			<li data-id="6"> <span>大家电 /生活电器 </span></li>
-			<li data-id="7"> <span>厨具 /收纳 /宠物  </span></li>
-			<li data-id="8"> <span>汽车 /配件 /用品  </span></li>
-			<li data-id="9"> <span>生鲜水果  </span></li>
-			<li data-id="10"> <span>家纺 /家饰 /鲜花   </span></li>
-			<li data-id="11"> <span>家纺 /家饰 /鲜花   </span></li>
-			<li data-id="12"> <span>家纺 /家饰 /鲜花   </span></li>
+			<li data-id="1"><span><i class="iconfont icon-jinkoushipin"></i>&nbsp;&nbsp;全球进口</span></li>
+			<li data-id="2"> <span><i class="iconfont icon-daocha"></i>&nbsp;食品 / 酒 / 生鲜</span></li>
+			<li data-id="3"> <span><i class="iconfont icon-yinger
+"></i>&nbsp;&nbsp;母婴 / 玩具 / 童装 </span></li>
+			<li data-id="4"> <span><i class="iconfont icon-xifashui"></i>&nbsp;&nbsp;纸巾 / 厨卫清洁 / 宠物 </span></li>
+			<li data-id="5"> <span><i class="iconfont icon-shafa"></i>&nbsp;&nbsp;家居家纺 / 厨具 / 家具 </span></li>
+			<li data-id="6"> <span><i class="iconfont icon-kouhong"></i>&nbsp;&nbsp;美妆 / 个人清洁 </span></li>
+			<li data-id="7"> <span><i class="iconfont icon-qunzi
+"></i>&nbsp;&nbsp;女装 / 男装 / 内衣 / 珠宝</span></li>
+			<li data-id="8"> <span><i class="iconfont icon-baobao"></i>&nbsp;&nbsp;鞋靴 / 箱包 / 运动户外</span></li>
+			<li data-id="9"> <span><i class="iconfont icon-pingban"></i>&nbsp;&nbsp;手机 / 数码 / 电脑办公 </span></li>
+			<li data-id="10"> <span><i class="iconfont icon-weibolu"></i>&nbsp;&nbsp;家用电器 / 汽车用品 </span></li>
+			<li data-id="11"> <span><i class="iconfont icon-yaoping"></i>&nbsp;&nbsp;医药/保健滋补/成人  </span></li>
+			<li data-id="12"> <span><i class="iconfont icon-shu"></i>&nbsp;&nbsp;图书 </span></li>
 		</ul>
 	</div>
 	<div class="nav_right">
 		<div class="sub hide" data-id="1">
-			<dl>
-				<dt><a >护肤品 <i> &gt;</i></a> </dt>
-				<dd>
-					<a>官方直售</a>
-					<a>面膜</a>
-					<a>护肤套装</a>
-					<a>乳液面霜</a>
-					<a>精华液</a>
-					<a>官方直售</a>
-					<a>面膜</a>
-					<a>护肤套装</a>
-					<a>乳液面霜</a>
-					<a>精华液</a>
-					<a>官方直售</a>
-					<a>面膜</a>
-					<a>护肤套装</a>
-					<a>乳液面霜</a>
-					<a>精华液</a>
-				</dd>
-			</dl>
 			<dl>
 				<dt><a >彩妆 <i> &gt;</i></a> </dt>
 				<dd>
@@ -382,150 +398,152 @@
 	</div>
 </div>	
 </div>
-<div class="senction_one">
-	<div class="senction_one_01">
-		<a href="#"><img src="img/pic1.jpg"/></a>
-		<a class="senction_one_left" href="#">查看更多 ></a>
+<div class="senction">
+	<div class="senction_one">
+		<div class="senction_one_01">
+			<a href="#"><img src="img/pic1.jpg"/></a>
+			<a class="senction_one_left" href="#">查看更多 ></a>
+		</div>
+		<div class="swiper-container">
+	    	<div class="swiper-wrapper">
+	      		<div class="swiper-slide">
+	      			<div class="senction_one_02">
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic7.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic6.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic5.jpg"/>
+				</div>
+			</a>
+		</div>
+	      		</div>
+	      		<div class="swiper-slide">
+	      			<div class="senction_one_02">
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic4.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic3.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic2.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+		</div>
+	      		</div>
+	      		<div class="swiper-slide">
+	      			<div class="senction_one_02">
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+			<a href="#">
+				<div class="senction_one_03">
+					<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
+					<p class="senction_one_02_02">￥32.9</p>
+					<p class="senction_one_02_03">参考价：￥58</p>
+				</div>
+				<div class="senction_one_04">
+					<img src="img/pic8.jpg"/>
+				</div>
+			</a>
+		</div>
+	      		</div>
+	    	</div>
+	    <!-- Add Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+	 	</div>
 	</div>
-	<div class="swiper-container">
-    	<div class="swiper-wrapper">
-      		<div class="swiper-slide">
-      			<div class="senction_one_02">
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic7.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic6.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic5.jpg"/>
-			</div>
-		</a>
-	</div>
-      		</div>
-      		<div class="swiper-slide">
-      			<div class="senction_one_02">
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic4.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic3.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic2.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-	</div>
-      		</div>
-      		<div class="swiper-slide">
-      			<div class="senction_one_02">
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-		<a href="#">
-			<div class="senction_one_03">
-				<p class="senction_one_02_01">德炎 麻辣虾球<br/>（虾尾） 300g 海鲜水产</p>
-				<p class="senction_one_02_02">￥32.9</p>
-				<p class="senction_one_02_03">参考价：￥58</p>
-			</div>
-			<div class="senction_one_04">
-				<img src="img/pic8.jpg"/>
-			</div>
-		</a>
-	</div>
-      		</div>
-    	</div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
- 	</div>
 </div>
 <div class="senction_two">
 	<img class="senction_two_01" src="img/per1.jpg"/>
@@ -611,8 +629,11 @@
 				</a>
 			</div>
 		</div>
-		<div class="senction_three_03">
+		<div class="senction_three_02">
 			<a class="senction_three_02_01" href="#">耍大牌</a>
+			<div class="senction_three_02_02">
+				<img src="img/nb11.jpg"/>
+			</div>
 			<div class="senction_three_02_03">
 				<a href="#">
 					<p class="senction_three_02_04">量贩团</p>
@@ -625,7 +646,8 @@
 					<img src="img/nb04.jpg"/>
 				</a>
 			</div>
-		</div>		
+		</div>
+
 </div>
 <div class="senction_four">
 	<a href="#"><img src="img/per17.jpg"/></a>
@@ -762,21 +784,21 @@
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh04.jpg"/>
+					<img class="imgs" src="img/yh04.jpg"/>
 				</a>
 			</div>
 			<div class="c21">
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh05.jpg"/>
+					<img class="imgs" src="img/yh05.jpg"/>
 				</a>
 			</div>
 			<div class="c21">
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh06.jpg"/>
+					<img class="imgs" src="img/yh06.jpg"/>
 				</a>
 			</div>
 		</div>
@@ -785,21 +807,21 @@
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh07.jpg"/>
+					<img class="imgs" src="img/yh07.jpg"/>
 				</a>
 			</div>
 			<div class="c21">
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh08.png"/>
+					<img class="imgs" src="img/yh08.png"/>
 				</a>
 			</div>
 			<div class="c21">
 				<a href="#">
 					<p>美味1起享</p>
 					<p class="c22">第二件半价</p>
-					<img src="img/yh05.jpg"/>
+					<img class="imgs" src="img/yh05.jpg"/>
 				</a>
 			</div>
 		</div>
@@ -837,9 +859,209 @@
 		</div>
 	</div>
 </div>
+<div class="senction_seven">
+	<div class="senction_seven_left">
+		 <div class="_top">
+		 	<h4><a href="#">母婴玩具 ></a></h4>
+		 	<div class="_top_01">
+		 		<ul>
+			 		<li><a href="#">奶粉</a>|</li>
+			 		<li><a href="#">尿裤</a>|</li>
+			 		<li><a href="#">玩具乐器</a>|</li>
+			 		<li><a href="#">营养辅食</a>|</li>
+			 		<li><a href="#">洗护清洁</a>|</li>
+			 		<li><a href="#">宝宝喂养</a>|</li>
+			 		<li><a href="#">童车安全</a></li>
+		 		</ul>
+		 	</div>
+		 </div>
+		 <div class="_bottom">
+		 	<div class="_cen">
+		 		<div id="_left">
+		 		</div>
+		 	</div>
+		 	<div class="_cen1">
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img class="imgs" src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img class="imgs" src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 	</div>
+		 	<div class="_cen1">
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img class="imgs" src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img class="imgs" src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 	</div>
+		 </div>
+	</div>
+	<div class="senction_seven_right">
+		 <div class="_top">
+		 	<h4><a href="#">母婴玩具 ></a></h4>
+		 	<div class="_top_01">
+		 		<ul>
+			 		<li><a href="#">奶粉</a>|</li>
+			 		<li><a href="#">尿裤</a>|</li>
+			 		<li><a href="#">玩具乐器</a>|</li>
+			 		<li><a href="#">营养辅食</a>|</li>
+			 		<li><a href="#">洗护清洁</a>|</li>
+			 		<li><a href="#">宝宝喂养</a>|</li>
+			 		<li><a href="#">童车安全</a></li>
+		 		</ul>
+		 	</div>
+		 </div>
+		 <div class="_bottom">
+		 	<div class="_cen">
+		 		<div id="_left">
+		 		</div>
+		 	</div>
+		 	<div class="_cen1">
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 	</div>
+		 	<div class="_cen1">
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 		<div class="_top1">
+		 			<a href="#">
+		 				<p>奶粉大牌</p>
+		 				<p class="tt1">爆款直降</p>
+		 				<img src="img/cu6.jpg"/>
+		 			</a>
+		 		</div>
+		 	</div>
+		 </div>
+	</div>
+</div>
+<div class="foot">
+		<div class="foot_top">
+			<a href="#">
+				<img src="img/foot1.jpg"/>
+				<b>正品保障</b>
+				<span>正品行货 放心选购</span>
+			</a>
+			<a href="#">
+				<img src="img/foot1.jpg"/>
+				<b>满86包邮</b>
+				<span>满86元 免运费</span>
+			</a>
+			<a href="#">
+				<img src="img/foot1.jpg"/>
+				<b>售后无忧</b>
+				<span>7天无理由退货</span>
+			</a>
+			<a href="#">
+				<img src="img/foot1.jpg"/>
+				<b>准时送达</b>
+				<span>收货时间由你做主</span>
+			</a>
+		</div>
+		<div class="foot_cen">
+			<div class="foot_cen_01">
+				<dl>
+					<dt>新手入门</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员制度</a></dd>
+					<dd><a href="#">订单查询</a></dd>
+					<dd><a href="#">发票制度</a></dd>
+					<dd><a href="#">网站地图</a></dd>
+				</dl>
+				<dl>
+					<dt>新手入门</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员制度</a></dd>
+					<dd><a href="#">订单查询</a></dd>
+					<dd><a href="#">发票制度</a></dd>
+					<dd><a href="#">网站地图</a></dd>
+				</dl>
+				<dl>
+					<dt>新手入门</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员制度</a></dd>
+					<dd><a href="#">订单查询</a></dd>
+
+				</dl>
+				<dl>
+					<dt>新手入门</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">网站地图</a></dd>
+				</dl>
+			</div>
+			<div class="foot_cen_02">
+				<div class="foot_cen_03">
+				<p>APP更优惠</p>
+				<img src="img/erwema01.png"/>
+				</div>
+				<div class="foot_cen_03">
+				<p>加微信查订单</p>
+				<img src="img/erweima02.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class="foot_bott">
+			<p>
+				<a href="#">沪ICP备16050468号</a>|
+				<a href="#">经营证照</a>|
+				<a href="#">互联网药品信息服务资格证</a>|
+				<a href="#">违法和不良信息举报电话：0527-88100253</a>|
+				<a href="#">沪B2-20170039</a>|
+				<a href="#">沪公网安备 31010502002939号</a>|
+				<a href="#">友情链接</a>|
+				<a href="#">出版物经营许可证</a>
+			</p>
+			<p>
+				<p>Copyright© 1号店网上超市 2007-2017，All Rights Reserved</p>
+			</p>
+			<div class="foot_bott_01">
+				<a href="#"><img src="img/foot5.jpg"/></a>
+				<a href="#"><img src="img/foot6.jpg"/></a>
+				<a href="#"><img src="img/foot7.jpg"/></a>
+				<a href="#"><img src="img/foot8.jpg"/></a>
+				<a href="#"><img src="img/foot9.png"/></a>
+				<a href="#"><img src="img/foot10.png"/></a>
+			</div>
+		</div>
+</div>
 </body>
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/style.js" ></script>
   <script>
     var swiper = new Swiper('.banner .swiper-container', {
@@ -879,6 +1101,34 @@
         prevEl: '.sention_six .swiper-button-prev',
       },
     });
+    let t1=document.getElementById('t1');
+    let t2=document.getElementById('erweima');
+    t1.onmouseover=function(){
+    	t2.style.display="block";
+    }
+    t1.onmouseout=function(){
+    	t2.style.display="none";
+    }
+    t2.onmouseover=function(){
+    	t2.style.display="block";
+    }
+    t2.onmouseout=function(){
+    	t2.style.display="none";
+    }
+
+    // let images=document.getElementsByClassName('imgs');
+    // images.onmouseover=function(){
+    // 	images.style.right="20px";
+    // }
+    $("#_left").load("123.html");
+   //  $(".imgs").hover(
+   //  	function(){
+   //  		$(".imgs").css("right","20px");
+   //  	},
+   //  	function(){
+			// $(".imgs").css("right","10px");
+   //  	}
+   //  );
   </script>
 
 </html>
