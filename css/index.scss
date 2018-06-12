@@ -68,6 +68,16 @@ body {
 	float: right;
 	margin-right:38px;
 	line-height:30px;
+	#user{
+		height: 31px;
+		width:90px;
+		display: none;
+		p{
+			text-align:center;
+			float: left;
+			color:red;
+		}
+	}
 	li{
 		font-size: 12px;
 		float: left;
@@ -75,6 +85,10 @@ body {
 			width: 90px;
 			height: 32px;
 			padding: 0 10px;
+
+		}
+		#cook{
+			display:block;
 		}
 		div{
 			width: 68px;
@@ -202,7 +216,7 @@ body {
 
 // banner
  .banner .swiper-container {
-      width: 1006px;;
+      width: 1022px;;
       height: 400px;
       margin-right:63px;
 

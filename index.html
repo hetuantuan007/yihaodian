@@ -22,10 +22,13 @@
 		<a id="t1" href="#"><i class="iconfont icon-shouji"></i>APP下载</a> -->
 		<ul>
 			<li>
-				<div class="top_right_1">
+				<div id="cook" class="top_right_1">
 					<span>Hi,请</span>
-					<a href="#">登陆&nbsp;&nbsp;</a>
-					<a class="tr1" href="#">注册</a>
+					<a href="login.html">登陆&nbsp;&nbsp;</a>
+					<a class="tr1" href="register.html">注册</a>
+				</div>
+				<div id="user">
+					<span>欢迎您</span><p id="yonghu"></p>
 				</div>
 			</li>
 			<li>
@@ -396,7 +399,7 @@
 			</dl>
 		</div>
 	</div>
-</div>	
+	</div>	
 </div>
 <div class="senction">
 	<div class="senction_one">
@@ -1061,10 +1064,12 @@
 </body>
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/cookie.js" ></script>
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="js/style.js" ></script>
-  <script>
-    var swiper = new Swiper('.banner .swiper-container', {
+<script>
+	$(function(){
+		var swiper = new Swiper('.banner .swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -1129,6 +1134,20 @@
 			// $(".imgs").css("right","10px");
    //  	}
    //  );
+	// function(){
+		 let username = getCookie("username");
+		 if(username!=""){
+	   	$("#cook").css("display","none");
+	   	$("#user").css("display","block");
+	   	$("#yonghu").html(username);
+	   	}else{
+	   	$("#user").css("display","none");
+	   	$("#cook").css("display","block");
+	}
+	// }
+
+	})
+    
   </script>
 
 </html>
