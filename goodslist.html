@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/goodslist.css">	
+</head>
+<body>
+	<!-- header -->
+<div class="top">
+	<div class="top_left">
+		<a href="#"><img src="img/weizhi.jpg"/><span>送货地址：西安</span></a>
+	</div>
+	<div class="top_right ">
+		<!-- <span>Hi,请</span>
+		<a href="#">登陆</a>
+		<a href="#">注册</a>
+		<a href="#"><i class="iconfont icon-icon-"></i>我的订单</a>
+		<a href="#">客户服务</a>
+		<a id="t1" href="#"><i class="iconfont icon-shouji"></i>APP下载</a> -->
+		<ul>
+			<li>
+				<div id="cook" class="top_right_1">
+					<span>Hi,请</span>
+					<a href="login.html">登陆&nbsp;&nbsp;</a>
+					<a class="tr1" href="register.html">注册</a>
+				</div>
+				<div id="user">
+					<span>欢迎您</span><p id="yonghu"></p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="#"><i class="iconfont icon-icon-"></i>我的订单</a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="#">客户服务</a>
+				</div>
+			</li>
+			<li id="t1">
+				<div>
+					<a href="#"><i class="iconfont icon-shouji"></i>APP下载</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="erweima">
+		<p>扫描二维码<br/>下载1号店APP</p>
+		<a href="#"><img src="img/erwema01.png"/></a>
+	</div>
+</div>
+<div class="search_1">
+	<div class="search">
+		<div class="search_logo"><img src="img/logo.jpg"/></div>
+		<div class="search_left">
+			<input class="txt" type="text"/>
+			<button>
+				<i class="iconfont icon-fangdajing"></i>
+			</button>
+			<div class="search_right">
+				<a href="#"><i class="iconfont icon-cart"></i> &nbsp;&nbsp;购物车</a>
+			</div>
+			<!-- <button type="button"/> -->
+			<div class="search_bottom">
+				<a href="#">饼干</a>
+				<a href="#">华为</a>
+				<a href="#">苹果</a>
+				<a href="#">T恤</a>
+				<a href="#">牛奶</a>
+				<a href="#">牙膏</a>
+				<a href="#">礼物</a>
+				<a href="#">拖鞋</a>
+				<a href="#">玩具</a>
+				<a href="#">美食</a>
+			</div>
+		</div>
+		<div class="search_nav">
+			<a href="#">一号抢购</a>
+			<a href="#">一号团</a>
+			<a href="#">领券中心</a>
+			<a href="#">捡便宜</a>
+			<a href="#">全球进口</a>
+			<a href="#">一号生鲜</a>
+			<a href="#">美妆个护</a>
+			<a href="#">家居馆</a>
+			<a href="#">电器城</a>
+		</div>
+	</div>
+</div>
+<!-- banner -->
+<div class="banner">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide"><img src="img/banner9.jpg"/></div>
+	      <div class="swiper-slide"><img src="img/banner10.jpg"/></div>
+	      <div class="swiper-slide"><img src="img/banner11.jpg"/></div>
+	      <div class="swiper-slide"><img src="img/banner12.jpg"/></div>
+	    </div>
+	    <!-- Add Pagination -->
+	    <div class="swiper-pagination"></div>
+	    <!-- Add Arrows -->
+<!-- 	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div> -->
+  </div>
+</div>
+</body>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+var swiper = new Swiper('.swiper-container', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+</html>
