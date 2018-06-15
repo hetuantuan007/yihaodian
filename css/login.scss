@@ -18,6 +18,7 @@ body {
 	font-family: 'Microsoft Yahei';
 	background:#f5f5f5;
 }
+
 .top{
 	height: 48px;
 	/*width: 100%;*/
@@ -43,13 +44,18 @@ body {
 		}
 	}
 }
+.sec{
+	width:980px;
+	height: 429px;
+	margin: 0 auto;
+}
 .cen{
 	width:100%;
 	padding: 26px 0 0;
 	height: 430px;
 	._left{
 		margin-top: 45px;
-		margin-left: 200px;
+		/*margin-left: 200px;*/
    	 	width: 510px;
    	 	height: 315px;
    		float: left; 
@@ -64,7 +70,7 @@ body {
 	    width: 330px;
 	    padding: 45px 35px 0 35px;
 	    background-color: #fff;
-	    margin-right: 166px;
+	    /*margin-right: 166px;*/
 	    #p3{
 	    	height: 30px;
 	    	width:280px;

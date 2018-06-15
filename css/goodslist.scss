@@ -99,23 +99,13 @@ body {
 	}
 	a{	
 		position: relative;
-		/*margin-right:20px;*/
 		color:#666666;
-	/*	display: block;
-		float: left;*/
-		/*width: 50px;
-		height: 32px;*/
 		.iconfont{
 			font-size:20px;
 			line-height:20px;
-			/*position: absolute;
-			left: -17px;
-			top:-1px;*/
-			/*vertical-align:bottom;*/
 		}
 		.icon-shouji{
 			font-size: 14px;
-			/*display: block;*/
 		}
 	}
 	:hover{
@@ -293,10 +283,13 @@ body {
 			}
 	}
 }
+._banner{
+	width: 100%;
+	background-color: #fff;
+}
 .banner{
 	width:990px;
 	height: 400px;
-	background-color: blue;
 	margin:0 auto;
 	img{
 		width: 100%;
@@ -327,3 +320,252 @@ body {
       -webkit-align-items: center;
       align-items: center;
     }
+
+
+/*section*/
+.section_one{
+	width: 100%;
+	height: 240px;
+	padding-top: 10px;
+	background-color: #fff;
+	.section_one1 :first-child{
+		margin-left:0;
+	}
+	.section_one1{
+		width: 990px;
+		height: 250px;
+		margin: 0 auto;
+		a{
+			float: left;
+			width: 240px;
+			height: 240px;
+			margin-left: 10px; 
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.section_two{
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
+	background-color: #fff;
+	padding-bottom: 10px;
+	img{
+		height: 100px;
+		width: 990px;
+		margin: 0 auto;
+	}
+}
+.section_three{
+	width: 100%;
+	height: 306px;
+	background-color: #fff;
+	ul{
+		height: 100%;
+		width:990px;
+		margin: 0 auto;
+		._sec_one{
+		margin:0 10px; 	
+		}
+		._sec_two{
+		margin-right: 10px;	
+		}
+		li{
+			width: 240px;
+			height: 286px;
+			padding:10px 0; 
+			float: left;
+			/*margin-left: 10px;*/
+			.image{
+				display: block;
+				width: 178px;
+				height: 178px;
+				margin: 0 auto;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.sec_1{
+				width: 220px;
+				height: 98px;
+				padding: 10px 10px 0 10px;
+				._cen{
+					display: block;
+					width: 100%;
+					height: 27px;
+					font-size: 12px;
+					color: #333;
+					margin: 0 auto;
+					margin-bottom: 12px; 
+				}
+				._cen:hover{
+					color: red;
+					text-decoration: underline;
+				}
+				p{
+					height: 19px;
+					width: 100%;
+					font-size: 12px;
+					color: #E60041;
+					span{
+						font-weight: 600;
+					}
+				}
+				.shop{
+					height: 37px;
+					width: 220px;
+					a{
+						display: block;
+						width: 50%;
+						height: 100%;
+						float: left;
+						border:1px solid #E60041;
+						box-sizing: border-box;
+						font-size: 14px;
+						text-align: center;
+						line-height: 37px;
+						color: #E60041;
+					}
+					.buy{
+						background: #E60041;
+						color: #fff;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+}
+/*footer*/
+.foot{
+	/*height: 450px;*/
+	width: 100%;
+	background-color: #fff;
+	.foot_top{
+    display: block;
+    width: 1228px;
+    overflow: hidden;
+    margin: 0 auto;
+    /*background-color: red;*/
+    padding: 30px 0;
+    border-bottom: 1px solid #ebebeb;
+    margin-top:20px;
+	    a{
+		float: left;
+	    display: block;
+	    width: 205px;
+	    overflow: hidden;
+	    margin: 0 51px;
+		}
+		img{
+			vertical-align: top;
+			float: left;
+		    display: block;
+		    width: 66px;
+		    height: 66px;
+		    margin-right: 15px;
+		}
+		b{
+			display: block;
+		    margin-top: 10px;
+		    font-size: 16px;
+		    color: #333;
+		}
+		span{
+		    font-size: 14px;
+		    color: #999;
+		    line-height: 26px;
+		}
+	}
+	.foot_cen{
+	margin: 0 auto;
+    width: 1228px;
+	height: 152px;
+	padding: 20px 0 20px;
+		.foot_cen_01{
+			float: left;
+		    padding-left: 15px;
+		    dl{
+			float: left;
+		    display: block;
+		    width: 195px;
+		    dt{
+			height: 32px;
+		    padding: 0 8px;
+		    font-size: 14px;
+		    color: #666;
+		    line-height: 32px;
+			}
+				dd{
+				height: 24px;
+			    padding: 0 8px;
+			    line-height: 24px;
+			    font-size: 12px;
+			    a{
+					color: #666;
+				}
+				a:hover{
+					color: red;
+				}
+
+			}
+
+		}
+
+		}
+		.foot_cen_03{
+		    float: left;
+		    margin-right: 50px;
+		    color: #666;
+		}
+		.foot_cen_02{
+		    width: 280px;
+		    float: left;
+		    margin-right: -50px;
+			p{
+				line-height: 32px;
+			    font-size: 14px;
+			    font-weight: 600;
+			    color: #666;
+			        
+			}
+			img{
+				width: 90px;
+			    height: 90px;
+			}
+		}
+	}
+	.foot_bott{
+	height: 115px;
+	width: 100%;
+	p{
+	    text-align: center;
+	    line-height: 100%;
+	    margin: 15px 0;
+	    font-size: 12px;
+	    color: #666;
+	    a{
+			font-size: 12px;
+			color: #666;
+		    margin: 0px 10px;
+		}
+		a:hover{
+			color:red;
+		}
+	}
+	.foot_bott_01{
+	text-align: center;
+	padding: 10px 0 20px;
+	img{
+		display:inline;
+	}
+}
+	}
+
+
+}

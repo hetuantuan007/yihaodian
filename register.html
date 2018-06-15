@@ -8,8 +8,8 @@
 <body>
 	<div class="top">
 		<div class="top_left">
-			<a class="logo" href="#"><img src="img/logo2.jpg"/></a>
-			<p class="top_right">您好，欢迎光临1号店！<a href="#">请登录</a></p>
+			<a class="logo" href="javascript::"><img src="img/logo2.jpg"/></a>
+			<p class="top_right">您好，欢迎光临1号店！<a href="login.html">请登录</a></p>
 		</div>
 	</div>
 	<div class="cen">
@@ -56,7 +56,7 @@
 					<li>
 						<div>
 							点击注册，表示您同意1号店
-							<a href="#">《服务协议及隐私声明》</a>
+							<a href="javascript::">《服务协议及隐私声明》</a>
 						</div>
 						<input class="zc" type="submit" value="同意协议并注册" />
 					</li>
@@ -65,9 +65,9 @@
 		</div>
 	</div>
 	<div class="bottom">
-		<a href="#">沪ICP备16050468号</a>|
-		<a href="#">沪B2-20170039</a>|
-		<a href="#">营业执照</a>
+		<a href="javascript::">沪ICP备16050468号</a>|
+		<a href="javascript::">沪B2-20170039</a>|
+		<a href="javascript::">营业执照</a>
 		<p>Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
 	</div>
 </body>
@@ -163,16 +163,21 @@ $(function(){
 		$("#userword6").animate({left: '-70px'}, "slow");
 		$("#userword5").animate({opacity:"show"}, 500);
 		});
+	//记录用户名是否存在；
+	let hasUserName = false;
 // 每个文本框失去光标后的正则判断
+	var str="0000"
 	$('#username1').focusout(function(){	
 		if(checkAll("username",this.value)==false){
 			$("#username1").css("border","1px solid #fc3f83");
 			$("#name").css("display","none");
 			$("#name2").css("display","none");
 			$("#name4").css("display","block");
+			str[0]="0";
 		}else{
 			$("#name2").css("display","none");
 			$("#username1").css("border","1px solid #3ffc6b");
+			str[0]="1";
 		}	
 	});
 	$('#phone1').focusout(function(){	
@@ -180,10 +185,12 @@ $(function(){
 			$("#phone3").css("display","none");	
 			$("#phone4").css("display","block");
 			$("#phone1").css("border","1px solid #fc3f83");
+			str[1]="0";
 		}else{
 			$("#phone4").css("display","none");
 			$("#phone3").css("display","none");	
 			$("#phone1").css("border","1px solid #3ffc6b");
+			str[1]="1";
 		}	
 	});
 	$('#userword1').focusout(function(){	
@@ -191,9 +198,11 @@ $(function(){
 			$("#userword7").css("display","block");
 			$("#userword3").css("display","none");
 			$("#userword1").css("border","1px solid #fc3f83");
+			str[2]="0";
 		}else{
 			$("#userword3").css("display","none");
 			$("#userword1").css("border","1px solid #3ffc6b");
+			str[2]="1";
 		}	
 	});
 	$('#userword2').focusout(function(){	
@@ -205,11 +214,12 @@ $(function(){
  			$("#userword5").css("display","none");
 
 			$("#userword2").css("border","1px solid #3ffc6b");
+			str[3]="0";
  		}else{
  			$("#userword8").css("display","block");
  			$("#userword5").css("display","none");
 			$("#userword2").css("border","1px solid #fc3f83");
-
+			str[3]="1";
  		}
 	});
 	// $("#name3").click(function(){
@@ -249,7 +259,27 @@ $(function(){
 		$("#userword2")[0].focus();
       	$("#userword6").animate({left: '-70px'}, "slow");
 		$("#userword5").animate({opacity:"show"}, 500);
-	});  
+	});
+
+
+		let youname=$("#username1").val();
+		if(youname!=""){
+		$("#name3").css("left","-70px");
+		}
+		let youphone=$("#phone1").val();
+		if(youphone!=""){
+		$("#phone2").css("left","-70px");
+		}
+	function check(event){
+	//1、判断每个文本框里的值是否合法（正则验证是否通过）
+	//if(checkAll("username1",$("#username1").val()) && checkAll("phone1",$("#phone1").val()) && checkAll("userword1",$("#userword1").val())){
+	if(str!="1111" || hasUserName){
+		//2、如果有一个文本框没有正则通过，就不提交（阻止默认行为）
+		let evt = event || window.event;
+		//evt.returnValue = false;
+		evt.preventDefault();
+	}
+}  
 
 })
 	
